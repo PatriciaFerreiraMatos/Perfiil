@@ -6,28 +6,36 @@
 		<link rel="stylesheet" href="style.css">
 		<link rel="shortcut icon" href="assets/icon.ico" type="image/x-icon">
 		<link href="https://fonts.googleapis.com/css?family=Orbitron|Prompt:300" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
 		<header>
-			<audio src="audio/vamosfugir.mp3" autoplay loop></audio>
-			<nav>
+			<input type="checkbox" id="menumobile">
+			<label for="menumobile">&#9776;</label>
+			<nav class="menu">			
 				<ul>
-					<li><a href="#home">Inicio</a></li>
-				  	<li><a href="#contact">Contato</a></li>
-				</ul>
+					<li><a href="#">Fotografias</a>
+						<ul>
+							<li><a href="fotos.html#photofamily" >Em família</a></li>
+							<li><a href="fotos.html#alonephotos" >Sozinha</a></li>
+							<li><a href="fotos.html#photosreligion" >Religião</a></li>
+						</ul>
+					</li>
+				</ul>	
 			</nav>
-		</header>
-		<main id="home">
+		</header>	
+		<main>
 			<section class="containerFirst">
 				<img src="assets/perfil.jpg" alt="foto de perfil da patricia" class="containerFirst__image">
 				<div class="containerFirst__block placeblock">
-					<marquee><h1>Patricia</h1></marquee>
+					<marquee behavior="alternate"><h1>Patricia</h1></marquee>
 					<p class="containerFirst__blockParagraph1">Canceriana, 23 anos, casada.</p>
 					<p class="containerFirst__blockParagraph2">Super curiosa e ambiciosa na área de Tecnologia. Amo comer, e estudo para me tornar uma das melhores programadoras BACKEND</p>
 				</div>
 			</section>
 		</main>
-		<footer id="contact">
+		<footer>
+			<p class="paragraphFooter">&copy; 2019 Patricia</p>
 			<div class="containerFooter__block">
 				<a href="https://www.instagram.com/agarotadorock/?hl=pt-br">
 					<img src="assets/instagram.png" class="containerFooter__blockImage instagram">
